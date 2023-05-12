@@ -19,10 +19,14 @@ function playRound(playerSelection, computerSelection) {
     if ((playerSelection === 'paper' && computerSelection === 'scissors')
     || (playerSelection === 'rock' && computerSelection === 'paper')
     || (playerSelection === 'scissors' && computerSelection === 'rock')) {
-        return `You Lose! ${capitalize(computerSelection)} beats ${capitalize(playerSelection)}`;
+        return -1;
     } else if (playerSelection === computerSelection) {
-        return 'Tie!';
+        return 0;
     } else {
-        return `You Win! ${capitalize(playerSelection)} beats ${capitalize(computerSelection)}`;
+        return 1;
     }
+}
+
+function game() {
+
 }
