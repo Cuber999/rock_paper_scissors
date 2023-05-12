@@ -44,6 +44,12 @@ function game() {
             console.log('Tie!');
         }
     }
-    console.log('Game over!');
+    if (playerScore > computerScore) {
+        console.log('Game over. You won!');
+    } else if (playerScore < computerScore) {
+        console.log('Game over. You lost!');
+    } else {
+        console.log('Game over. Tie game!')
+    }
     console.log(`Player: ${playerScore} Computer: ${computerScore}`);
 }
